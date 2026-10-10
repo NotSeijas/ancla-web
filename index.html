@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ancla Web · Páginas web y sistemas para negocios</title>
-<meta name="description" content="Páginas web, sistemas de ventas, boletas y facturas electrónicas para negocios en Perú. Explicado fácil, hecho a tu medida. Escríbenos por WhatsApp.">
+<title>Ancla Web · Publicidad, webs y sistemas para negocios</title>
+<meta name="description" content="Publicidad en Facebook e Instagram, configuración de redes, páginas web y sistemas de ventas para negocios en Perú. Asesoría gratis por WhatsApp.">
 <meta property="og:title" content="Ancla Web · Tu negocio, firme en internet">
-<meta property="og:description" content="Páginas web y sistemas para negocios. Conectados a WhatsApp, Google y SUNAT.">
+<meta property="og:description" content="Publicidad, redes, páginas web y sistemas para que tu negocio venda más.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0e1d36">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1d36'/%3E%3Cg fill='none' stroke='%23e1b868' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='32' cy='15' r='5'/%3E%3Cpath d='M32 20v32M24 27h16M15 38a17 17 0 0 0 34 0M11 42l4-5 5 3M53 42l-4-5-5 3'/%3E%3C/g%3E%3C/svg%3E">
@@ -20,7 +20,7 @@
   --orange:#e1b868; --sienna:#e1b868; --sky:#3b82f6; --pink:#ff66cf; --sprout:#22c55e; --mist:#bebcbb;
   --f-display:'Fraunces',Georgia,serif; --f-ui:'Geist',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; --f-hand:'Caveat','Comic Sans MS',cursive;
   --shadow-lg:rgba(0,0,0,.28) 0 10px 30px 0; --shadow-subtle:rgba(0,0,0,.25) 0 1px 2px 0;
-  --max:1200px; --wa:"https://wa.me/51998984552";
+  --max:1200px; --wa:"https://wa.me/51926682920";
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
@@ -180,6 +180,32 @@ section{padding:64px 0}
 .d4 .n1{top:76px}.d4 .n2{top:140px}
 .in .d4 .n1{opacity:1;transform:none;transition-delay:.6s}
 .in .d4 .n2{opacity:1;transform:none;transition-delay:1.3s}
+
+
+/* demo 5: anuncio + alcance */
+.d5{display:flex;align-items:center;gap:18px;padding:0 22px}
+.d5 .ad{flex:none;width:150px;background:#fff;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;color:var(--ink);font:500 11px var(--f-ui);transform:translateY(20px);opacity:0;transition:all .6s cubic-bezier(.3,1.3,.5,1)}
+.in .d5 .ad{transform:none;opacity:1}
+.d5 .adh{display:flex;gap:7px;align-items:center;padding:7px 8px}.d5 .adh i{width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#dc2626)}
+.d5 .adh small{display:block;font-size:9px;color:#6b7280}
+.d5 .adi{height:70px;background:linear-gradient(140deg,#f59e0b,#c2410c);display:flex;align-items:center;justify-content:center;font-size:40px}
+.d5 .adf{display:flex;justify-content:space-between;padding:7px 8px;font-weight:600}
+.d5 .zone{position:relative;flex:1;height:150px;display:flex;align-items:center;justify-content:center}
+.d5 .zone small{position:absolute;bottom:4px;font:500 12px var(--f-ui);color:var(--muted)}
+.d5 .pin{font-size:30px;position:relative;z-index:2}
+.d5 .rg{position:absolute;width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);opacity:0}
+.in .d5 .rg{animation:ring 2.4s ease-out infinite}.in .d5 .r2{animation-delay:1.2s}
+@keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(4.2);opacity:0}}
+/* demo 6: redes configuradas */
+.d6{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:0 22px}
+.d6 .row{display:flex;align-items:center;gap:12px;height:42px;background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:0 10px;color:var(--ink);font:600 14px var(--f-ui);opacity:0;transform:translateX(-16px);transition:all .5s cubic-bezier(.3,1.3,.5,1)}
+.d6 .row i{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font:700 16px var(--f-ui);font-style:normal}
+.d6 .ok{margin-left:auto;width:24px;height:24px;border-radius:50%;background:#d1d5db;display:flex;align-items:center;justify-content:center;transition:background .3s}
+.d6 .ok svg{width:14px;height:14px}
+.in .d6 .row{opacity:1;transform:none}
+.in .d6 .row:nth-child(2){transition-delay:.15s}.in .d6 .row:nth-child(3){transition-delay:.3s}
+.in .d6 .row .ok{background:#1fa855}
+.in .d6 .row:nth-child(1) .ok{transition-delay:.8s}.in .d6 .row:nth-child(2) .ok{transition-delay:1.2s}.in .d6 .row:nth-child(3) .ok{transition-delay:1.6s}
 
 /* carrusel de diseños */
 .showcase{background:var(--dew);border-top:1.5px solid var(--charcoal);border-bottom:1.5px solid var(--charcoal);overflow:hidden}
@@ -383,10 +409,10 @@ html.loading{overflow:hidden}
  <div>
   <span class="hand rv">hola, negocio 👋</span>
   <h1 class="rv d1s">tu negocio, firme en internet.</h1>
-  <p class="lead rv d2s">Hacemos páginas web y sistemas para que vendas más, explicado sin palabras raras. Tú atiendes a tus clientes, nosotros nos encargamos de <span class="mark">lo técnico<svg viewBox="0 0 100 10" preserveAspectRatio="none"><path pathLength="1" d="M1 6 C 20 2, 35 9, 52 5 S 82 3, 99 6"/></svg></span>.</p>
+  <p class="lead rv d2s">Publicidad, redes, páginas web y sistemas para que tu negocio venda más. Tú atiendes; nosotros nos encargamos de <span class="mark">lo técnico<svg viewBox="0 0 100 10" preserveAspectRatio="none"><path pathLength="1" d="M1 6 C 20 2, 35 9, 52 5 S 82 3, 99 6"/></svg></span>.</p>
   <div class="rv d3s">
-   <a class="pill big wa-link" href="#" data-msg="Hola Ancla Web 👋 Quiero mi página web">quiero mi página <span class="arr">→</span></a>
-   <p class="note">Conversamos por WhatsApp, sin compromiso.</p>
+   <a class="pill big wa-link" href="#" data-msg="Hola Ancla Web 👋 Quiero más clientes para mi negocio">quiero más clientes <span class="arr">→</span></a>
+   <p class="note">Asesoría gratis por WhatsApp.</p>
   </div>
  </div>
 
@@ -426,10 +452,29 @@ html.loading{overflow:hidden}
 <section id="que-hacemos">
  <div class="wrap">
   <div class="sec-head">
-   <div><span class="kicker ui rv">qué hacemos</span><h2 class="rv d1s">todo lo que tu negocio<br>necesita en internet.</h2></div>
-   <p class="rv d2s">Sin tecnicismos: te explicamos cada cosa como se la explicarías a un amigo. Tú decides qué necesitas hoy y qué dejas para después.</p>
+   <div><span class="kicker ui rv">qué hacemos</span><h2 class="rv d1s">todo para que tu<br>negocio crezca.</h2></div>
+   <p class="rv d2s">Elige lo que necesitas hoy. Lo demás puede esperar.</p>
   </div>
   <div class="grid4">
+   <article class="card rv">
+    <div class="demo d5">
+     <div class="ad"><div class="adh"><i></i><div><b>Tu negocio</b><small>Publicidad</small></div></div><div class="adi">🍗</div><div class="adf">❤️ <span class="count" data-to="1248">0</span><span>💬 <span class="count" data-to="86">0</span></span></div></div>
+     <div class="zone"><span class="rg"></span><span class="rg r2"></span><span class="pin">📍</span><small>personas de tu zona</small></div>
+    </div>
+    <span class="num">01</span><h3>publicidad en redes</h3>
+    <p>Hacemos que la gente de tu zona vea tu negocio en Facebook e Instagram y te escriba.</p>
+    <ul><li>Anuncios para tu zona y tu público</li><li>Los mensajes llegan a tu WhatsApp</li><li>Tú decides cuánto invertir</li></ul>
+   </article>
+   <article class="card rv d1s">
+    <div class="demo d6">
+     <div class="row"><i style="background:#1877f2">f</i>Facebook<span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+     <div class="row"><i style="background:linear-gradient(135deg,#f9a825,#e1306c 55%,#833ab4)">◎</i>Instagram<span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+     <div class="row"><i style="background:#25D366"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></i>WhatsApp Business<span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+    </div>
+    <span class="num">02</span><h3>tus redes, listas</h3>
+    <p>Dejamos tu Facebook, Instagram y WhatsApp Business bien configurados, y llevamos tus videos a más gente.</p>
+    <ul><li>Página y perfil profesional</li><li>WhatsApp Business con catálogo</li><li>Tus videos con más alcance</li></ul>
+   </article>
    <article class="card rv">
     <div class="demo d1"><div class="win">
       <div class="blk" style="left:24px;top:22px;width:46%;height:16px"></div>
@@ -438,32 +483,17 @@ html.loading{overflow:hidden}
       <div class="btn">ver la carta</div>
       <div class="blk" style="right:24px;top:22px;width:24%;height:100px;background:#ffe2c6;transition-delay:.45s"></div></div>
      <svg class="cur" viewBox="0 0 24 24"><path d="M4 2 L4 20 L9 15 L12 22 L15 21 L12 14 L19 14 Z" fill="#fff" stroke="#0e1d36" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-    <span class="num">01</span><h3>página web</h3>
-    <p>Tu negocio abierto las 24 horas. Tus clientes te encuentran en Google, ven lo que ofreces y te escriben con un toque.</p>
-    <ul><li>Se ve perfecta en el celular</li><li>Botón directo a tu WhatsApp</li><li>Aparece en Google Maps y búsquedas</li></ul>
+    <span class="num">03</span><h3>página web</h3>
+    <p>Tu negocio abierto las 24 horas: te encuentran en Google y te escriben con un toque.</p>
+    <ul><li>Se ve perfecta en el celular</li><li>Botón directo a tu WhatsApp</li><li>Aparece en Google</li></ul>
    </article>
    <article class="card rv d1s">
-    <div class="demo d2"><div class="tot">S/ <span class="count" data-to="1250">0</span><small>ventas de hoy</small></div>
-     <div class="b" style="height:34%"></div><div class="b" style="height:48%;transition-delay:.1s"></div><div class="b" style="height:40%;transition-delay:.2s"></div><div class="b" style="height:58%;transition-delay:.3s"></div><div class="b" style="height:52%;transition-delay:.4s"></div><div class="b" style="height:66%;transition-delay:.5s"></div></div>
-    <span class="num">02</span><h3>sistema de ventas</h3>
-    <p>Olvídate del cuaderno. Registra cada venta desde el celular y mira al instante cuánto vendiste y qué te queda en stock.</p>
-    <ul><li>Ventas e inventario en un solo lugar</li><li>Reportes del día, semana y mes</li><li>Fácil de usar para todo tu equipo</li></ul>
-   </article>
-   <article class="card rv">
     <div class="demo d3"><div class="slot"></div>
      <div class="paper"><div style="text-align:center;font-weight:700">BOLETA ELECTRÓNICA</div><div style="text-align:center;color:#7a6b5c">B001 - 000245</div><i style="width:80%"></i><i style="width:60%"></i><i style="width:70%"></i><div style="display:flex;justify-content:space-between;font-weight:700;margin-top:8px"><span>TOTAL</span><span>S/ 45.00</span></div></div>
      <div class="stamp">✓ aceptada por SUNAT</div></div>
-    <span class="num">03</span><h3>boletas y facturas</h3>
-    <p>Emite comprobantes electrónicos en segundos, válidos ante la SUNAT, directo desde tu sistema. Sin papeleo ni filas.</p>
-    <ul><li>Boletas, facturas y notas de crédito</li><li>Se envían solas a SUNAT</li><li>Tu cliente las recibe al toque</li></ul>
-   </article>
-   <article class="card rv d1s">
-    <div class="demo d4"><div class="moon">🌙</div><div class="clock">11:59 p.m.</div>
-     <div class="ntf n1"><i>⚓</i><div>Cierre del día listo ✓<small>Ventas S/ 1,250 · 18 boletas</small></div></div>
-     <div class="ntf n2"><i>🔔</i><div>Todo en orden<small>Y si algo falla, te avisamos</small></div></div></div>
-    <span class="num">04</span><h3>todo en automático</h3>
-    <p>Tu sistema trabaja mientras duermes: cierra el día, prepara tus reportes y te avisa si algo necesita tu atención.</p>
-    <ul><li>Cierres y reportes automáticos</li><li>Avisos cuando algo no anda bien</li><li>Soporte cuando lo necesites</li></ul>
+    <span class="num">04</span><h3>sistema de ventas</h3>
+    <p>Registra ventas, controla tu stock y emite boletas SUNAT desde el celular.</p>
+    <ul><li>Ventas e inventario</li><li>Boletas y facturas electrónicas</li><li>Reportes automáticos</li></ul>
    </article>
   </div>
  </div>
@@ -473,7 +503,7 @@ html.loading{overflow:hidden}
 <section class="showcase" id="disenos">
  <div class="wrap sec-head" style="margin-bottom:0;padding-top:16px">
   <div><span class="kicker ui rv">diseños de ejemplo</span><h2 class="rv d1s">una web a la medida<br>de cada negocio.</h2></div>
-  <div class="rv d2s"><p style="margin-bottom:20px">Arrastra para ver más. Cada diseño se adapta a tus colores, tus productos y tu forma de vender.</p>
+  <div class="rv d2s"><p style="margin-bottom:20px">Arrastra para ver más. Cada diseño se adapta a tu negocio.</p>
    <div class="ctrls"><button class="pill" id="prev" aria-label="Anterior">←</button><button class="pill" id="next" aria-label="Siguiente">→</button></div></div>
  </div>
  <div class="track-wrap"><div class="track" id="track"></div></div>
@@ -484,14 +514,14 @@ html.loading{overflow:hidden}
  <div class="wrap">
   <div class="sec-head">
    <div><span class="kicker ui rv">cómo trabajamos</span><h2 class="rv d1s">simple, de principio a fin.</h2></div>
-   <p class="rv d2s">Nada de procesos eternos. Te acompañamos en cada paso y te hablamos claro.</p>
+   <p class="rv d2s">Claro y sin vueltas.</p>
   </div>
   <div class="steps">
    <svg class="steps-line" viewBox="0 0 1000 20" preserveAspectRatio="none"><path d="M0 10 C 160 0, 300 20, 500 10 S 840 0, 1000 10"/></svg>
-   <div class="step rv"><div class="n">1</div><h3>conversamos</h3><p>Nos cuentas de tu negocio por WhatsApp o en persona. Entendemos qué necesitas de verdad.</p></div>
-   <div class="step rv d1s"><div class="n">2</div><h3>diseñamos</h3><p>Te mostramos cómo se verá antes de construir. Ajustamos hasta que te encante.</p></div>
-   <div class="step rv d2s"><div class="n">3</div><h3>lanzamos</h3><p>Publicamos tu web o sistema, te enseñamos a usarlo y lo dejamos funcionando.</p></div>
-   <div class="step rv d3s"><div class="n">4</div><h3>te acompañamos</h3><p>Cambios, dudas o mejoras: seguimos ahí. Tu negocio crece y tu web también.</p></div>
+   <div class="step rv"><div class="n">1</div><h3>conversamos</h3><p>Nos cuentas qué necesitas.</p></div>
+   <div class="step rv d1s"><div class="n">2</div><h3>preparamos</h3><p>Ves cómo quedará antes de empezar.</p></div>
+   <div class="step rv d2s"><div class="n">3</div><h3>lanzamos</h3><p>Lo publicamos y te enseñamos a usarlo.</p></div>
+   <div class="step rv d3s"><div class="n">4</div><h3>te acompañamos</h3><p>Seguimos contigo para cambios y mejoras.</p></div>
   </div>
  </div>
 </section>
@@ -500,7 +530,7 @@ html.loading{overflow:hidden}
 <section id="proyectos">
  <div class="wrap">
   <span class="hand rv" style="display:inline-block;transform:rotate(-3deg);margin-bottom:10px">no es teoría</span>
-  <p class="big-quote rv d1s">Proyectos reales, publicados y <span class="mark">funcionando hoy<svg viewBox="0 0 100 10" preserveAspectRatio="none"><path pathLength="1" d="M1 6 C 20 2, 35 9, 52 5 S 82 3, 99 6"/></svg></span>. Entra y míralos tú mismo.</p>
+  <p class="big-quote rv d1s">Proyectos reales, <span class="mark">funcionando hoy<svg viewBox="0 0 100 10" preserveAspectRatio="none"><path pathLength="1" d="M1 6 C 20 2, 35 9, 52 5 S 82 3, 99 6"/></svg></span>.</p>
   <div id="projects"></div>
  </div>
 </section>
@@ -510,12 +540,12 @@ html.loading{overflow:hidden}
  <div class="wrap">
   <div class="sec-head"><div><span class="kicker ui rv">preguntas frecuentes</span><h2 class="rv d1s">lo que todos nos preguntan.</h2></div></div>
   <div class="faq rv">
-   <details open><summary>¿Necesito saber de computadoras?<span class="pm"></span></summary><p>Para nada. Nosotros nos encargamos de todo lo técnico. Si eliges un sistema, te enseñamos a usarlo paso a paso y queda tan fácil como usar WhatsApp.</p></details>
-   <details><summary>¿Cuánto demora tener mi página?<span class="pm"></span></summary><p>Una página web sencilla puede estar lista en unos 7 días, desde que nos envías tu información. Los sistemas a medida dependen de lo que necesites; te damos un plazo claro antes de empezar.</p></details>
-   <details><summary>¿Cuánto cuesta?<span class="pm"></span></summary><p>Depende de lo que tu negocio necesite. Escríbenos, conversamos sin compromiso y te enviamos una cotización clara, sin costos escondidos.</p></details>
-   <details><summary>¿Las boletas son válidas ante la SUNAT?<span class="pm"></span></summary><p>Sí. Los comprobantes se emiten de forma electrónica a través de un proveedor autorizado y se envían a la SUNAT automáticamente.</p></details>
-   <details><summary>¿Puedo pedir cambios después?<span class="pm"></span></summary><p>Claro. Tu negocio cambia y tu web también. Te ayudamos con actualizaciones, nuevos productos o mejoras cuando lo necesites.</p></details>
-   <details><summary>¿Qué pasa con el dominio y el hosting?<span class="pm"></span></summary><p>Te ayudamos a conseguir tu dominio (por ejemplo, tunegocio.pe) y dejamos todo publicado y funcionando. Tú no tienes que configurar nada.</p></details>
+   <details open><summary>¿Necesito saber de computadoras?<span class="pm"></span></summary><p>No. Nos encargamos de todo y te enseñamos lo necesario.</p></details>
+   <details><summary>¿Cuánto cuesta?<span class="pm"></span></summary><p>Depende de lo que necesites. Escríbenos y te enviamos una cotización clara, sin costos escondidos.</p></details>
+   <details><summary>¿Cuánto debo invertir en publicidad?<span class="pm"></span></summary><p>Tú decides. Recomendamos empezar con poco, medir resultados y crecer desde ahí.</p></details>
+   <details><summary>¿Cuánto demora una página web?<span class="pm"></span></summary><p>Una página sencilla, unos 7 días. Un sistema depende de lo que necesites.</p></details>
+   <details><summary>¿Las boletas son válidas ante la SUNAT?<span class="pm"></span></summary><p>Sí. Se emiten por un proveedor autorizado y se envían solas a la SUNAT.</p></details>
+   <details><summary>¿Puedo pedir cambios después?<span class="pm"></span></summary><p>Claro. Te acompañamos con cambios y mejoras.</p></details>
   </div>
  </div>
 </section>
@@ -525,8 +555,8 @@ html.loading{overflow:hidden}
  <div class="wrap" style="position:relative">
   <span class="hand rv" style="display:inline-block;transform:rotate(-3deg);margin-bottom:12px">¿y si empezamos hoy?</span>
   <h2 class="rv d1s">conversemos sobre tu negocio.</h2>
-  <p class="rv d2s">Cuéntanos qué vendes y cómo trabajas. Te decimos, sin compromiso, qué te conviene y cuánto cuesta.</p>
-  <div class="rv d3s"><a class="pill big wa-link" href="#" data-msg="Hola Ancla Web 👋 Quiero conversar sobre mi negocio">escribir por WhatsApp <span class="arr">→</span></a><p class="note" style="font-size:16px;margin-top:12px">+51 998 984 552</p></div>
+  <p class="rv d2s">Cuéntanos de tu negocio y te decimos qué te conviene. Sin compromiso.</p>
+  <div class="rv d3s"><a class="pill big wa-link" href="#" data-msg="Hola Ancla Web 👋 Quiero conversar sobre mi negocio">escribir por WhatsApp <span class="arr">→</span></a><p class="note" style="font-size:16px;margin-top:12px">+51 926 682 920</p></div>
   <div class="stk wob" style="right:6%;top:10px;width:120px;height:150px;rotate:10deg" data-drag><svg viewBox="0 0 64 80"><rect x="2" y="2" width="60" height="76" rx="14" fill="#e1b868" stroke="#fbf6ec" stroke-width="2"/><g fill="none" stroke="#0e1d36" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="17" r="5"/><path d="M32 22v40M23 30h18M14 46a18 18 0 0 0 36 0M10 50l4-5 5 3M54 50l-4-5-5 3"/></g></svg></div>
   <div class="stk wob" style="right:20%;top:150px;width:64px;height:64px;rotate:-12deg;animation-delay:-1.8s" data-drag><svg viewBox="0 0 70 70"><path d="M35 2 C 38 26, 44 32, 68 35 C 44 38, 38 44, 35 68 C 32 44, 26 38, 2 35 C 26 32, 32 26, 35 2 Z" fill="#ff66cf" stroke="#fbf6ec" stroke-width="2" stroke-linejoin="round"/></svg></div>
  </div>
@@ -536,8 +566,8 @@ html.loading{overflow:hidden}
 <footer>
  <div class="wrap">
   <div class="foot">
-   <div><p style="font-size:24px;max-width:420px">Páginas web y sistemas para negocios que quieren crecer sin complicarse.</p></div>
-   <div><h4>Contacto</h4><a class="wa-link" href="#" data-msg="Hola Ancla Web 👋">WhatsApp</a><a href="tel:+51998984552">+51 998 984 552</a></div>
+   <div><p style="font-size:24px;max-width:420px">Publicidad, redes, webs y sistemas para negocios que quieren crecer.</p></div>
+   <div><h4>Contacto</h4><a class="wa-link" href="#" data-msg="Hola Ancla Web 👋">WhatsApp</a><a href="tel:+51926682920">+51 926 682 920</a></div>
    <div><h4>Explora</h4><a href="#que-hacemos">Qué hacemos</a><a href="#proyectos">Proyectos</a><a href="#disenos">Diseños</a><a href="#preguntas">Preguntas</a></div>
   </div>
   <div class="bigname" style="display:flex;align-items:center;gap:.25em">Ancla web <svg style="width:.8em;height:.8em" viewBox="0 0 64 64" fill="none" stroke="#0e1d36" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="12" r="6"/><path d="M32 18v38M22 27h20M11 38a21 21 0 0 0 42 0M7 43l4-6 6 3M57 43l-4-6-6 3"/></svg></div>
@@ -548,7 +578,7 @@ html.loading{overflow:hidden}
 <a class="pill float wa-link" href="#" data-msg="Hola Ancla Web 👋 Quiero información" aria-label="Escríbenos por WhatsApp"><span class="dot"></span>whatsapp</a>
 
 <script>
-const WA='https://wa.me/51998984552?text=';
+const WA='https://wa.me/51926682920?text=';
 document.querySelectorAll('.wa-link').forEach(a=>{a.href=WA+encodeURIComponent(a.dataset.msg||'Hola Ancla Web');a.target='_blank';a.rel='noopener'});
 document.getElementById('yr').textContent=new Date().getFullYear();
 
@@ -595,13 +625,13 @@ addEventListener('pointerup',()=>{if(dx!==null){dx=null;tr.classList.remove('dra
 // proyectos reales
 const PROJ=[
  {id:'durand',url:'https://draugustodurand.com/',dom:'draugustodurand.com',cap:'tienda online + sistema',name:'Tilín FL',client:'Dr. Augusto Durand',type:'producto veterinario',
-  desc:'Tienda online del antipulgas Tilín FL: catálogo por tamaño de perro, promociones por docena, carrito de compras y pedido directo por WhatsApp. Detrás funciona su sistema de ventas, inventario y boletas electrónicas ante SUNAT, con cierre automático cada noche.',
+  desc:'Tienda online con carrito y pedidos por WhatsApp, más su sistema de ventas y boletas SUNAT.',
   tags:['Tienda online','Carrito de compras','Pedidos por WhatsApp'],g:'Sistema + facturación SUNAT',rot:[-3,5]},
  {id:'coffrut',url:'https://notseijas.github.io/coffrut/',dom:'notseijas.github.io/coffrut',cap:'carta digital',name:'Coffrut',client:'Coffrut',type:'jugos, batidos y café',
-  desc:'Web para un bar de zumos, batidos y café en Pucallpa: carta digital completa, los favoritos de la casa, sus sedes y horarios. Colorida, con frutas animadas y pensada para abrirse desde el celular.',
+  desc:'Carta digital de un bar de jugos y café en Pucallpa, pensada para el celular.',
   tags:['Carta digital','Favoritos de la casa','Sedes y horarios'],g:'Animaciones',rot:[3,-5]},
  {id:'sinsonte',url:'https://notseijas.github.io/SINSONTE/',dom:'notseijas.github.io/SINSONTE',cap:'web de marca',name:'Sinsonte',client:'Sinsonte',type:'aperitivo de ajíes',
-  desc:'Web de marca para el primer aperitivo de ajíes peruanos: cuenta su historia, presenta el producto y sus cócteles, y lleva al cliente directo a comprar. Elegante, oscura y con mucha personalidad.',
+  desc:'Web de marca para un aperitivo de ajíes peruanos: historia, producto y compra.',
   tags:['Historia de marca','Producto y cócteles','Botón de compra'],g:'Diseño premium',rot:[-2,6]}
 ];
 document.getElementById('projects').innerHTML=PROJ.map((p,i)=>`
