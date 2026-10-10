@@ -370,7 +370,7 @@ html.loading{overflow:hidden}
  <div class="wrap nav">
   <a class="brand" href="#" aria-label="Ancla Web, inicio">
    <svg viewBox="0 0 64 64" fill="none" stroke="#e1b868" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="13" r="6"/><path d="M32 19v35M22 27h20M12 38a20 20 0 0 0 40 0M8 43l4-6 6 3M56 43l-4-6-6 3"/></svg>
-   ancla web
+   Ancla web
   </a>
   <nav class="nav-links"><a href="#que-hacemos">qué hacemos</a><a href="#disenos">diseños</a><a href="#proyectos">proyectos</a><a href="#como">cómo trabajamos</a><a href="#preguntas">preguntas</a></nav>
   <a class="pill wa-link" href="#" data-msg="Hola Ancla Web 👋 Quiero información para mi negocio">escríbenos <span class="arr">→</span></a>
@@ -540,7 +540,7 @@ html.loading{overflow:hidden}
    <div><h4>Contacto</h4><a class="wa-link" href="#" data-msg="Hola Ancla Web 👋">WhatsApp</a><a href="tel:+51998984552">+51 998 984 552</a></div>
    <div><h4>Explora</h4><a href="#que-hacemos">Qué hacemos</a><a href="#proyectos">Proyectos</a><a href="#disenos">Diseños</a><a href="#preguntas">Preguntas</a></div>
   </div>
-  <div class="bigname" style="display:flex;align-items:center;gap:.25em">ancla web <svg style="width:.8em;height:.8em" viewBox="0 0 64 64" fill="none" stroke="#0e1d36" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="12" r="6"/><path d="M32 18v38M22 27h20M11 38a21 21 0 0 0 42 0M7 43l4-6 6 3M57 43l-4-6-6 3"/></svg></div>
+  <div class="bigname" style="display:flex;align-items:center;gap:.25em">Ancla web <svg style="width:.8em;height:.8em" viewBox="0 0 64 64" fill="none" stroke="#0e1d36" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="12" r="6"/><path d="M32 18v38M22 27h20M11 38a21 21 0 0 0 42 0M7 43l4-6 6 3M57 43l-4-6-6 3"/></svg></div>
   <div class="copy"><span>© <span id="yr"></span> Ancla Web · Pucallpa, Perú</span><span>Tu negocio, firme en internet.</span></div>
  </div>
 </footer>
@@ -633,7 +633,7 @@ const startReveal=()=>document.querySelectorAll('.rv,.mark').forEach(el=>io.obse
 // pantalla de carga: dibuja el ancla, llena la barra y se retira hacia arriba
 (function(){const L=document.getElementById('loader'),root=document.documentElement;
  if(!L||getComputedStyle(L).display==='none'){root.classList.remove('loading');startReveal();return}
- L.querySelector('.word').innerHTML=[...'ancla web'].map((c,i)=>`<span class="${i>5?'g':''}" style="animation-delay:${.55+i*.05}s">${c===' '?'&nbsp;':c}</span>`).join('');
+ L.querySelector('.word').innerHTML=[...'Ancla web'].map((c,i)=>`<span class="${i>5?'g':''}" style="animation-delay:${.55+i*.05}s">${c===' '?'&nbsp;':c}</span>`).join('');
  const bar=L.querySelector('.bar i');let p=0,loaded=document.readyState==='complete';addEventListener('load',()=>loaded=true);
  const t0=performance.now();
  const tick=()=>{const el=performance.now()-t0;const target=loaded?1:Math.min(.9,el/2400);p+=(target-p)*.12;bar.style.setProperty('--p',p.toFixed(3));
