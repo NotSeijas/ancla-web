@@ -138,6 +138,18 @@ section{padding:clamp(96px,14vw,180px) 0}
 .in .sys figure:nth-child(2){transition-delay:120ms}.in .sys figure:nth-child(3){transition-delay:240ms}
 @media(max-width:900px){.work{grid-template-columns:1fr;gap:56px}.work .media,.work .txt,.work.flip .media,.work.flip .txt{grid-column:auto;order:0}.phone{width:30%;right:-2%}.work.flip .phone{left:auto;right:-2%}.sys{grid-template-columns:1fr 1fr}.sys figure:first-child{grid-column:1 / -1}}
 
+
+/* trabajos con enlace */
+a.media{display:block;color:inherit}
+.visit{position:absolute;left:16px;top:16px;z-index:3;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:999px;background:rgba(8,20,42,.82);color:var(--gold);font:500 14px var(--sans);box-shadow:0 0 0 1px var(--gold-line);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:transform 300ms var(--ease-out),background-color 200ms ease,color 200ms ease}
+.visit svg,.go svg{width:16px;height:16px}
+.work.flip .visit{left:auto;right:16px}
+@media(max-width:900px){.work.flip .visit{left:16px;right:auto}}
+a.media .screen{transition:transform 500ms var(--ease-out),box-shadow 500ms var(--ease-out)}
+a.media:active .screen{transform:scale(.985)}
+@media(hover:hover) and (pointer:fine){a.media:hover .screen{transform:translateY(-6px);box-shadow:0 50px 90px -30px rgba(0,0,0,.8),0 0 0 1px var(--gold-line)}a.media:hover .visit{background:var(--gold);color:var(--navy);transform:translateY(-2px)}}
+.go{margin-top:26px;height:46px;padding:0 22px;font-size:15px}
+
 /* ruta */
 .route{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
 .route svg.line{position:absolute;left:0;right:0;top:18px;width:100%;height:24px;overflow:visible}
@@ -268,9 +280,9 @@ html.loading{overflow:hidden}
   <div class="intro"><h2 class="h2 rv">Trabajos <em>reales</em></h2><p class="rv d1">Negocios que ya están firmes en internet.</p></div>
 
   <article class="work">
-   <div class="media rv"><div class="screen reveal-img"><img src="img/w-willon.jpg" alt="Página web de Pollos Broaster Willón" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-willon.jpg" alt="Carta digital de Willón en el celular" loading="lazy"></div></div>
+   <a class="media rv" href="https://willon-web.vercel.app/" target="_blank" rel="noopener" aria-label="Ver la web de Pollos Broaster Willón (se abre en otra pestaña)"><span class="visit">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span><div class="screen reveal-img"><img src="img/w-willon.jpg" alt="Página web de Pollos Broaster Willón" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-willon.jpg" alt="Carta digital de Willón en el celular" loading="lazy"></div></a>
    <div class="txt"><h3 class="rv">Pollos Broaster Willón</h3><p class="kind rv d1">Pollería · Pucallpa y Yarinacocha</p>
-    <ul class="rv d2"><li>Web con sus dos sedes</li><li>Carta digital con código QR</li><li>Pedidos por WhatsApp</li></ul></div>
+    <ul class="rv d2"><li>Web con sus dos sedes</li><li>Carta digital con código QR</li><li>Pedidos por WhatsApp</li></ul><a class="btn btn-ghost go rv d2" href="https://willon-web.vercel.app/" target="_blank" rel="noopener">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
   </article>
 
   <article class="work flip">
@@ -284,21 +296,27 @@ html.loading{overflow:hidden}
   </article>
 
   <article class="work">
-   <div class="media rv"><div class="screen reveal-img"><img src="img/w-tilin.jpg" alt="Tienda online de Tilín FL" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-tilin.jpg" alt="Tienda de Tilín FL en el celular" loading="lazy"></div></div>
+   <a class="media rv" href="https://draugustodurand.com/" target="_blank" rel="noopener" aria-label="Ver la web de Tilín FL (se abre en otra pestaña)"><span class="visit">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span><div class="screen reveal-img"><img src="img/w-tilin.jpg" alt="Tienda online de Tilín FL" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-tilin.jpg" alt="Tienda de Tilín FL en el celular" loading="lazy"></div></a>
    <div class="txt"><h3 class="rv">Tilín FL</h3><p class="kind rv d1">Dr. Augusto Durand · producto veterinario</p>
-    <ul class="rv d2"><li>Tienda online con carrito</li><li>Promociones por docena</li><li>Sistema de ventas y boletas SUNAT</li></ul></div>
+    <ul class="rv d2"><li>Tienda online con carrito</li><li>Promociones por docena</li><li>Sistema de ventas y boletas SUNAT</li></ul><a class="btn btn-ghost go rv d2" href="https://draugustodurand.com/" target="_blank" rel="noopener">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
   </article>
 
   <article class="work flip">
-   <div class="media rv"><div class="screen reveal-img"><img src="img/w-sinsonte.jpg" alt="Web de marca de Sinsonte" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-sinsonte.jpg" alt="Sinsonte en el celular" loading="lazy"></div></div>
+   <a class="media rv" href="https://notseijas.github.io/SINSONTE/" target="_blank" rel="noopener" aria-label="Ver la web de Sinsonte (se abre en otra pestaña)"><span class="visit">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span><div class="screen reveal-img"><img src="img/w-sinsonte.jpg" alt="Web de marca de Sinsonte" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-sinsonte.jpg" alt="Sinsonte en el celular" loading="lazy"></div></a>
    <div class="txt"><h3 class="rv">Sinsonte</h3><p class="kind rv d1">Aperitivo de ajíes peruanos</p>
-    <ul class="rv d2"><li>Historia de la marca</li><li>Producto y cócteles</li><li>Botón de compra</li></ul></div>
+    <ul class="rv d2"><li>Historia de la marca</li><li>Producto y cócteles</li><li>Botón de compra</li></ul><a class="btn btn-ghost go rv d2" href="https://notseijas.github.io/SINSONTE/" target="_blank" rel="noopener">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
   </article>
 
   <article class="work">
-   <div class="media rv"><div class="screen reveal-img"><img src="img/w-coffrut.jpg" alt="Web de Coffrut" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-coffrut.jpg" alt="Carta de Coffrut en el celular" loading="lazy"></div></div>
+   <a class="media rv" href="https://notseijas.github.io/coffrut/" target="_blank" rel="noopener" aria-label="Ver la web de Coffrut (se abre en otra pestaña)"><span class="visit">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span><div class="screen reveal-img"><img src="img/w-coffrut.jpg" alt="Web de Coffrut" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-coffrut.jpg" alt="Carta de Coffrut en el celular" loading="lazy"></div></a>
    <div class="txt"><h3 class="rv">Coffrut</h3><p class="kind rv d1">Jugos, batidos y café · Pucallpa</p>
-    <ul class="rv d2"><li>Carta digital</li><li>Favoritos y sedes</li><li>Pensada para el celular</li></ul></div>
+    <ul class="rv d2"><li>Carta digital</li><li>Favoritos y sedes</li><li>Pensada para el celular</li></ul><a class="btn btn-ghost go rv d2" href="https://notseijas.github.io/coffrut/" target="_blank" rel="noopener">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+  </article>
+
+  <article class="work flip">
+   <a class="media rv" href="https://impulso-web-roan.vercel.app/" target="_blank" rel="noopener" aria-label="Ver la web de IMpulso (se abre en otra pestaña)"><span class="visit">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span><div class="screen reveal-img"><img src="img/w-impulso.jpg" alt="Web de IMpulso, agencia creativa" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-impulso.jpg" alt="Web de IMpulso en el celular" loading="lazy"></div></a>
+   <div class="txt"><h3 class="rv">IMpulso</h3><p class="kind rv d1">Agencia creativa · Lima</p>
+    <ul class="rv d2"><li>Web de presentación de la agencia</li><li>Servicios, trabajos y proceso</li><li>Contacto directo por WhatsApp</li></ul><a class="btn btn-ghost go rv d2" href="https://impulso-web-roan.vercel.app/" target="_blank" rel="noopener">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
   </article>
  </div>
 </section>
