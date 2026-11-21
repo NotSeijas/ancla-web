@@ -208,6 +208,14 @@ html.loading{overflow:hidden}
  .js .anchor .drop{transform:none}
  .reveal-img{clip-path:none;transition:none}
 }
+
+/* sistemas de facturación (videos) */
+.sistemas{background:var(--navy)}
+.vid{position:relative;border-radius:18px;overflow:hidden;background:#050b16;box-shadow:0 0 0 1px var(--gold-line),0 50px 90px -30px rgba(0,0,0,.85);aspect-ratio:16/9}
+.vid video{display:block;width:100%;height:100%;object-fit:cover;background:#050b16}
+.vid-nota{margin-top:14px;font:400 13px var(--mono);color:var(--mist);letter-spacing:.03em}
+.tag-sys{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;height:30px;padding:0 14px;border-radius:999px;font:500 13px var(--sans);color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold-line)}
+.tag-sys i{width:7px;height:7px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.15)}
 </style>
 </head>
 <body>
@@ -243,7 +251,7 @@ html.loading{overflow:hidden}
 <header class="nav" id="nav">
  <div class="wrap">
   <a class="brand" href="#" aria-label="Ancla Web, inicio"><svg viewBox="0 0 64 64" fill="none" stroke="#e1b868" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="12" r="6"/><path d="M32 18v38M22 27h20M11 38a21 21 0 0 0 42 0M7 43l4-6 6 3M57 43l-4-6-6 3"/></svg>Ancla web</a>
-  <nav class="links"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#proceso">Proceso</a><a class="btn btn-gold wa" href="#" data-msg="Hola Ancla Web 👋 Quiero una cotización">Cotiza gratis</a></nav>
+  <nav class="links"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#sistemas">Sistemas</a><a href="#proceso">Proceso</a><a class="btn btn-gold wa" href="#" data-msg="Hola Ancla Web 👋 Quiero una cotización">Cotiza gratis</a></nav>
  </div>
 </header>
 
@@ -347,6 +355,24 @@ html.loading{overflow:hidden}
    <a class="media rv" href="https://altura-web-umber.vercel.app/" target="_blank" rel="noopener" aria-label="Ver la web de Altura Arquitectos (se abre en otra pestaña)"><span class="visit">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span><div class="screen reveal-img"><img src="img/w-altura.jpg" alt="Web de Altura, estudio de arquitectura" loading="lazy"></div><div class="phone reveal-img"><img src="img/m-altura.jpg" alt="Web de Altura en el celular" loading="lazy"></div></a>
    <div class="txt"><h3 class="rv">Altura Arquitectos</h3><p class="kind rv d1">Estudio de arquitectura · diseño de muestra</p>
     <ul class="rv d2"><li>Portada de impacto con cifras del estudio</li><li>Proyectos, servicios y proceso</li><li>Agenda de visitas</li></ul><a class="btn btn-ghost go rv d2" href="https://altura-web-umber.vercel.app/" target="_blank" rel="noopener">Ver la web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+  </article>
+ </div>
+</section>
+
+<section class="works sistemas" id="sistemas">
+ <div class="wrap">
+  <div class="intro"><h2 class="h2 rv">Sistemas de <em>facturación</em></h2><p class="rv d1">Ventas, boletas y facturas SUNAT funcionando en negocios reales.</p></div>
+
+  <article class="work">
+   <div class="media rv"><div class="vid reveal-img"><video controls preload="none" playsinline poster="video/sistema-tilin.jpg" aria-label="Video del sistema de ventas de Tilín FL"><source src="video/sistema-tilin.mp4" type="video/mp4"></video></div><p class="vid-nota">Video con datos de ejemplo · 2:22</p></div>
+   <div class="txt"><span class="tag-sys rv"><i></i>En uso</span><h3 class="rv">Tilín FL</h3><p class="kind rv d1">Distribuidora veterinaria · equipo de vendedoras</p>
+    <ul class="rv d2"><li>Stock por vendedora y traspasos entre ellas</li><li>Boletas, facturas y guías de remisión SUNAT</li><li>Supervisión en vivo y comisiones automáticas</li></ul><a class="btn btn-ghost go rv d2 wa" href="#" data-msg="Hola Ancla Web 👋 Me interesa un sistema de ventas como el de Tilín FL">Quiero uno así<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </article>
+
+  <article class="work flip">
+   <div class="media rv"><div class="vid reveal-img"><video controls preload="none" playsinline poster="video/sistema-ferreteria.jpg" aria-label="Video del sistema de ventas y facturación para ferretería"><source src="video/sistema-ferreteria.mp4" type="video/mp4"></video></div><p class="vid-nota">Video con datos de ejemplo · 3:19</p></div>
+   <div class="txt"><span class="tag-sys rv"><i></i>En uso</span><h3 class="rv">Multiservicios Ttica's</h3><p class="kind rv d1">Ferretería · Pucallpa</p>
+    <ul class="rv d2"><li>Venta por unidad, kilo, metro o galón</li><li>Boletas, facturas y cotizaciones en segundos</li><li>Ganancia del día y reportes en Excel</li></ul><a class="btn btn-ghost go rv d2 wa" href="#" data-msg="Hola Ancla Web 👋 Me interesa un sistema de ventas y facturación para mi negocio">Quiero uno así<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </article>
  </div>
 </section>
